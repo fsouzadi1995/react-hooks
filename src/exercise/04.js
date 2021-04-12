@@ -24,7 +24,7 @@ function Game() {
   const status = calculateStatus(winner, currentBoard, next);
 
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // All of this can be placed outside a function because we want to do it every rerender
+  // All of this can be placed outside a function because we want it to execute every rerender
 
   function selectSquare(square) {
     if (winner || currentBoard[square]) {
